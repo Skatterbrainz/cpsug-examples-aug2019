@@ -1,5 +1,9 @@
-# cpsug-examples-aug2019
-Charlotte PowerShell User Group meeting presentation - Aug 1, 2019
+# PowerShell Documentation: Comment-Based Help
+
+## cpsug-examples-aug2019
+
+Charlotte PowerShell User Group meeting presentation - Aug 1, 2019 
+
 https://www.meetup.com/Charlotte-PowerShell-Users-Group/events/nqdwkpyzlbcb/
 
 ## Details (From Meetup.com)
@@ -17,13 +21,13 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 * Laptop - We provide the wireless
 
-## PowerShell Documentation
-
 ### Benefits
 
 * Explain how things work, examples, etc.
 * More professional looking
 * Supports automated documentation
+
+More info: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6
 
 ### Scripts
 
@@ -32,6 +36,7 @@ Usually placed at the top of the script file.
 #### Standard format: 
 
 ```powershell
+#requires statements go up here...
 <#
 .SYNOPSIS
 
@@ -44,15 +49,22 @@ Usually placed at the top of the script file.
 .EXAMPLE
 
 #>
+
+# script code goes down here...
 ```
+
 #### In Action
 
 ```powershell
 ## example using DbaTools (https://dbatools.io or Install-Module dbatools)
-
 PS C:\> Get-Help Get-DbaMaxMemory
-PS C:\> Get-Help Export-CMHealthReport -Detailed
 ```
+Show script comments:
+
+```powershell
+Get-Help myscript.ps1
+```
+
 #### More Options for Get-Help
 
 ```powershell
@@ -65,13 +77,51 @@ _Examples_
 Get-Help Get-DbaMaxMemory -Examples
 ```
 
-### Functions
+### Functions: HelpMessage and Comments
 
-### Modules
+HelpMessage for Parameters
 
-### Markdown Coolness
+```powershell
+function Invoke-MyFunction {
+  param (
+    [parameter(Mandatory, HelpMessage="First name of user")]
+    [string] $FirstName
+  )
+  ...
+}
+```
+
+Help embedded in function definition
+
+```powershell
+function Invoke-MyFunction {
+  <#
+  .SYNOPSIS
+  ...
+  #>
+  param ()
+  ...
+}
+```
+
+Help inserted just above function definition
+
+```powershell
+<#
+.SYNOPSIS
+...
+#>
+function Invoke-MyFunction {
+  param ()
+  ...
+}
+```
+
+### Markdown Coolness with Modules
 
 You can automatically generate markdown documentation from any PowerShell module using the PlatyPS module function New-MarkdownHelp (use Get-Command -Module PlatyPS for more functions)
+
+Extract Comments to Markdown Files
 
 ```powershell
 New-MarkdownHelp -Module <name> -OutputFoler <path>
