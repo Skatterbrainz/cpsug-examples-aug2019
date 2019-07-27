@@ -95,11 +95,11 @@ function Invoke-MyFunction {
 }
 ```
 
-### Modules
-
-### Markdown Coolness
+### Markdown Coolness with Modules
 
 You can automatically generate markdown documentation from any PowerShell module using the PlatyPS module function New-MarkdownHelp (use Get-Command -Module PlatyPS for more functions)
+
+Extract Comments to Markdown Files
 
 ```powershell
 New-MarkdownHelp -Module <name> -OutputFoler <path>
