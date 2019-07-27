@@ -129,3 +129,14 @@ New-MarkdownHelp -Module <name> -OutputFoler <path> <-Force>
 # example:
 New-MarkdownHelp -Module CMHealthCheck -OutputFolder c:\git\cmhealthcheck\docs -Force
 ```
+
+View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/Docs/Export-CMHealthReport.md 
+
+## Summary
+
+* Comment-based Help is great for making sure things are used properly
+* Helps avoid helpdesk calls
+* Allows for automated documentation / publishing
+* It looks more professional
+
+## Questions?
