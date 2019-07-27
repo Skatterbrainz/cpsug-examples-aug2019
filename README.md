@@ -23,7 +23,7 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 ### Benefits
 
-* Explain how things work, examples, etc.
+* Explain functions, parameters, inputs and outputs, provide examples, etc.
 * More professional looking
 * Supports automated documentation
 
@@ -124,5 +124,8 @@ You can automatically generate markdown documentation from any PowerShell module
 Extract Comments to Markdown Files
 
 ```powershell
-New-MarkdownHelp -Module <name> -OutputFoler <path>
+New-MarkdownHelp -Module <name> -OutputFoler <path> <-Force>
+
+# example:
+New-MarkdownHelp -Module CMHealthCheck -OutputFolder c:\git\cmhealthcheck\docs -Force
 ```
