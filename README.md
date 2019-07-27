@@ -67,9 +67,9 @@ _Examples_
 Get-Help Get-DbaMaxMemory -Examples
 ```
 
-### Functions
+### Functions: HelpMessage and Comments
 
-**HelpMessage** and **Comments**
+Help embedded in function definition
 
 ```powershell
 function Invoke-MyFunction {
@@ -80,7 +80,11 @@ function Invoke-MyFunction {
   param ()
   ...
 }
+```
 
+Help inserted just above function definition
+
+```powershell
 <#
 .SYNOPSIS
 ...
