@@ -48,40 +48,21 @@ Usually placed at the top of the script file.
 #### In Action
 
 ```powershell
-Get-Help MyFunction
-
-## example using DbaTools...
+## example using DbaTools (https://dbatools.io or Install-Module dbatools)
 
 PS C:\> Get-Help Get-DbaMaxMemory
+PS C:\> Get-Help Export-CMHealthReport -Detailed
+```
+#### More Options for Get-Help
 
-NAME
-    Get-DbaMaxMemory
+```powershell
+Get-Help Get-Help -Detailed
+```
 
-SYNOPSIS
-    Gets the 'Max Server Memory' configuration setting and the memory of the server.  Works on SQL Server 2000-2014.
+_Examples_
 
-
-SYNTAX
-    Get-DbaMaxMemory [-SqlInstance] <Sqlcollaborative.Dbatools.Parameter.DbaInstanceParameter[]> [[-SqlCredential]
-    <Pscredential>] [-EnableException <Switch>] [<CommonParameters>]
-
-
-DESCRIPTION
-    This command retrieves the SQL Server 'Max Server Memory' configuration setting as well as the total physical
-    installed on the server.
-
-    Results are turned in megabytes (MB).
-
-
-RELATED LINKS
-    https://dbatools.io/Get-DbaMaxMemory
-
-REMARKS
-    To see the examples, type: "get-help Get-DbaMaxMemory -examples".
-    For more information, type: "get-help Get-DbaMaxMemory -detailed".
-    For technical information, type: "get-help Get-DbaMaxMemory -full".
-    For online help, type: "get-help Get-DbaMaxMemory -online"
-
+```powershell
+Get-Help Get-DbaMaxMemory -Examples
 ```
 
 ### Functions
@@ -89,3 +70,9 @@ REMARKS
 ### Modules
 
 ### Markdown Coolness
+
+You can automatically generate markdown documentation from any PowerShell module using the PlatyPS module function New-MarkdownHelp (use Get-Command -Module PlatyPS for more functions)
+
+```powershell
+New-MarkdownHelp -Module <name> -OutputFoler <path>
+```
