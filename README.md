@@ -52,14 +52,19 @@ Usually placed at the top of the script file.
 
 # script code goes down here...
 ```
+
 #### In Action
 
 ```powershell
 ## example using DbaTools (https://dbatools.io or Install-Module dbatools)
-
 PS C:\> Get-Help Get-DbaMaxMemory
-PS C:\> Get-Help Export-CMHealthReport -Detailed
 ```
+Show script comments:
+
+```powershell
+Get-Help myscript.ps1
+```
+
 #### More Options for Get-Help
 
 ```powershell
