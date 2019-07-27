@@ -74,6 +74,18 @@ Get-Help Get-DbaMaxMemory -Examples
 
 ### Functions: HelpMessage and Comments
 
+HelpMessage for Parameters
+
+```powershell
+function Invoke-MyFunction {
+  param (
+    [parameter(Mandatory, HelpMessage="First name of user")]
+    [string] $FirstName
+  )
+  ...
+}
+```
+
 Help embedded in function definition
 
 ```powershell
