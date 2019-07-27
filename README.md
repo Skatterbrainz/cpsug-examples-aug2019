@@ -36,6 +36,7 @@ Usually placed at the top of the script file.
 #### Standard format: 
 
 ```powershell
+#requires statements go up here...
 <#
 .SYNOPSIS
 
@@ -48,6 +49,8 @@ Usually placed at the top of the script file.
 .EXAMPLE
 
 #>
+
+# script code goes down here...
 ```
 #### In Action
 
