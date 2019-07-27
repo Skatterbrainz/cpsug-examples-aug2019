@@ -72,6 +72,23 @@ Get-Help Get-DbaMaxMemory -Examples
 **HelpMessage** and **Comments**
 
 ```powershell
+function Invoke-MyFunction {
+  <#
+  .SYNOPSIS
+  ...
+  #>
+  param ()
+  ...
+}
+
+<#
+.SYNOPSIS
+...
+#>
+function Invoke-MyFunction {
+  param ()
+  ...
+}
 ```
 
 ### Modules
