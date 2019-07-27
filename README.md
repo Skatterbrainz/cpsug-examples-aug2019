@@ -27,7 +27,9 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 ### Scripts
 
-Standard format: 
+Usually placed at the top of the script file.
+
+#### Standard format: 
 
 ```powershell
 <#
@@ -42,6 +44,44 @@ Standard format:
 .EXAMPLE
 
 #>
+```
+#### In Action
+
+```powershell
+Get-Help MyFunction
+
+## example using DbaTools...
+
+PS C:\> Get-Help Get-DbaMaxMemory
+
+NAME
+    Get-DbaMaxMemory
+
+SYNOPSIS
+    Gets the 'Max Server Memory' configuration setting and the memory of the server.  Works on SQL Server 2000-2014.
+
+
+SYNTAX
+    Get-DbaMaxMemory [-SqlInstance] <Sqlcollaborative.Dbatools.Parameter.DbaInstanceParameter[]> [[-SqlCredential]
+    <Pscredential>] [-EnableException <Switch>] [<CommonParameters>]
+
+
+DESCRIPTION
+    This command retrieves the SQL Server 'Max Server Memory' configuration setting as well as the total physical
+    installed on the server.
+
+    Results are turned in megabytes (MB).
+
+
+RELATED LINKS
+    https://dbatools.io/Get-DbaMaxMemory
+
+REMARKS
+    To see the examples, type: "get-help Get-DbaMaxMemory -examples".
+    For more information, type: "get-help Get-DbaMaxMemory -detailed".
+    For technical information, type: "get-help Get-DbaMaxMemory -full".
+    For online help, type: "get-help Get-DbaMaxMemory -online"
+
 ```
 
 ### Functions
