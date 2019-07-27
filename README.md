@@ -2,7 +2,8 @@
 
 ## cpsug-examples-aug2019
 
-Charlotte PowerShell User Group meeting presentation - Aug 1, 2019
+Charlotte PowerShell User Group meeting presentation - Aug 1, 2019 
+
 https://www.meetup.com/Charlotte-PowerShell-Users-Group/events/nqdwkpyzlbcb/
 
 ## Details (From Meetup.com)
@@ -25,7 +26,8 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 * Explain how things work, examples, etc.
 * More professional looking
 * Supports automated documentation
-* More info: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6
+
+More info: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6
 
 ### Scripts
 
