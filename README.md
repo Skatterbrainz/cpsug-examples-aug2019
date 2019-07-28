@@ -23,7 +23,7 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 ### Benefits
 
-* Explain how things work, examples, etc.
+* Explain functions, parameters, inputs and outputs, provide examples, etc.
 * More professional looking
 * Supports automated documentation
 
@@ -55,17 +55,21 @@ Usually placed at the top of the script file.
 
 #### In Action
 
-```powershell
-## example using DbaTools (https://dbatools.io or Install-Module dbatools)
-PS C:\> Get-Help Get-DbaMaxMemory
-```
-Show script comments:
+Display help for a module function:
 
 ```powershell
-Get-Help myscript.ps1
+PS C:\> Get-Help Invoke-DemoFunction
+```
+
+Display help for a script:
+
+```powershell
+Get-Help demoscript.ps1
 ```
 
 #### More Options for Get-Help
+
+Show all the options and parameters for Get-Help:
 
 ```powershell
 Get-Help Get-Help -Detailed
@@ -74,7 +78,7 @@ Get-Help Get-Help -Detailed
 _Examples_
 
 ```powershell
-Get-Help Get-DbaMaxMemory -Examples
+Get-Help Invoke-DemoFunction -Examples
 ```
 
 ### Functions: HelpMessage and Comments
@@ -82,38 +86,38 @@ Get-Help Get-DbaMaxMemory -Examples
 HelpMessage for Parameters
 
 ```powershell
-function Invoke-MyFunction {
+function Invoke-DemoFunction {
   param (
     [parameter(Mandatory, HelpMessage="First name of user")]
     [string] $FirstName
   )
-  ...
+  #...code...
 }
 ```
 
 Help embedded in function definition
 
 ```powershell
-function Invoke-MyFunction {
+function Invoke-DemoFunction {
   <#
   .SYNOPSIS
-  ...
+  ...more...
   #>
   param ()
-  ...
+  #...code...
 }
 ```
 
-Help inserted just above function definition
+Help inserted just above function definition:
 
 ```powershell
 <#
 .SYNOPSIS
-...
+...more...
 #>
-function Invoke-MyFunction {
+function Invoke-DemoFunction {
   param ()
-  ...
+  #...code...
 }
 ```
 
@@ -121,8 +125,33 @@ function Invoke-MyFunction {
 
 You can automatically generate markdown documentation from any PowerShell module using the PlatyPS module function New-MarkdownHelp (use Get-Command -Module PlatyPS for more functions)
 
-Extract Comments to Markdown Files
+Install PlatyPS:
 
 ```powershell
-New-MarkdownHelp -Module <name> -OutputFoler <path>
+Install-Module PlatyPS
 ```
+
+#### Extract Module Comments to Markdown Files:
+
+Syntax:
+
+```powershell
+New-MarkdownHelp -Module <name> -OutputFoler <path> <-Force>
+```
+
+Example:
+
+```powershell
+New-MarkdownHelp -Module CMHealthCheck -OutputFolder c:\git\cmhealthcheck\docs -Force
+```
+
+View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/Docs/Export-CMHealthReport.md 
+
+## Summary
+
+* Comment-based Help is great for making sure things are used properly
+* Helps avoid helpdesk calls
+* Allows for automated documentation / publishing
+* It looks more professional
+
+## Questions?
