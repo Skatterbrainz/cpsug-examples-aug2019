@@ -2,11 +2,11 @@
 
 ## cpsug-examples-aug2019
 
-Charlotte PowerShell User Group meeting presentation - Aug 1, 2019 
+Charlotte PowerShell User Group meeting presentation - Aug 1, 2019
 
 https://www.meetup.com/Charlotte-PowerShell-Users-Group/events/nqdwkpyzlbcb/
 
-## Details (From Meetup.com)
+## 1 - Details (From Meetup.com)
 
 Join us as David Stein of Catapult Systems shares with us some of the scripts and tools he has developed. We'll start off with our new speaker challenge to tell us about their favorite cmdlet and why. Then we'll move into some of the goodness David has used. Could be a little bit of everything. Documenting PowerShell scripts and generating markdown files using Platyps or building a library of SQL queries as stored files and using PowerShell to run them and return results for processing. It's going to be great!
 
@@ -21,7 +21,7 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 * Laptop - We provide the wireless
 
-### Benefits
+## 2 - Benefits of Comment-Based Help (and Comments in General)
 
 * Explain functions, parameters, inputs and outputs, provide examples, etc.
 * More professional looking
@@ -29,11 +29,9 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 More info: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6
 
-### Scripts
+## 3 - General format: Scripts
 
 Usually placed at the top of the script file.
-
-#### Standard format: 
 
 ```powershell
 #requires statements go up here...
@@ -81,7 +79,7 @@ _Examples_
 Get-Help Invoke-DemoFunction -Examples
 ```
 
-### Functions: HelpMessage and Comments
+## 4 - General Format: Functions / HelpMessage and Comments
 
 HelpMessage for Parameters
 
@@ -121,7 +119,7 @@ function Invoke-DemoFunction {
 }
 ```
 
-### Markdown Coolness with Modules
+## 5 - Markdown Coolness with Modules
 
 You can automatically generate markdown documentation from any PowerShell module using the PlatyPS module function New-MarkdownHelp (use Get-Command -Module PlatyPS for more functions)
 
@@ -131,7 +129,7 @@ Install PlatyPS:
 Install-Module PlatyPS
 ```
 
-#### Extract Module Comments to Markdown Files:
+### Extract Module Comments to Markdown Files:
 
 Syntax:
 
@@ -145,13 +143,13 @@ Example:
 New-MarkdownHelp -Module CMHealthCheck -OutputFolder c:\git\cmhealthcheck\docs -Force
 ```
 
-View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/Docs/Export-CMHealthReport.md 
+View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/Docs/Export-CMHealthReport.md
 
-## Summary
+## 6 - Summary
 
 * Comment-based Help is great for making sure things are used properly
 * Helps avoid helpdesk calls
 * Allows for automated documentation / publishing
 * It looks more professional
 
-## Questions?
+## 7 - Questions
