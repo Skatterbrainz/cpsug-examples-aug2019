@@ -147,10 +147,12 @@ View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/
 
 ### Warning: Markdown Standards
 
-There are two (2) main "common standards" for Markdown specifications:
+Technically, there is no single Markdown "standard".  There are two (2) popular "common standards" for Markdown specifications:
 
 * CommonMark
-* GFM (GitHub Flavored Markdown) <-- this page is GFM
+* GFM (GitHub Flavored Markdown) 
+
+This page is GFM since it runs on GitHub (use the "Raw" view link above to see the source formatting).
 
 More: [https://en.wikipedia.org/wiki/Markdown#Standardization](https://en.wikipedia.org/wiki/Markdown#Standardization)
 
