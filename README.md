@@ -145,6 +145,15 @@ New-MarkdownHelp -Module CMHealthCheck -OutputFolder c:\git\cmhealthcheck\docs -
 
 View example output: https://github.com/Skatterbrainz/CMHealthCheck/blob/master/Docs/Export-CMHealthReport.md
 
+### Warning: Markdown Standards
+
+There are two (2) main "common standards" for Markdown specifications:
+
+* CommonMark
+* GFM (GitHub Flavored Markdown) <-- this page is GFM
+
+More: [https://en.wikipedia.org/wiki/Markdown#Standardization](https://en.wikipedia.org/wiki/Markdown#Standardization)
+
 ## 6 - Summary
 
 * Comment-based Help is great for making sure things are used properly
