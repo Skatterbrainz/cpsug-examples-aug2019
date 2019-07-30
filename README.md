@@ -21,6 +21,24 @@ Join us for a evening of learning PowerShell. Our typical evening is:
 
 * Laptop - We provide the wireless
 
+### About Me
+
+It's all about me (not).
+
+* Consultant since 2007. IT world since the 1980s-ish
+* Works for Catapult Systems
+* Likes:
+  * Laughter, walks in the park, puppies, and yelling at my laptop
+  * Water, Coffee, Beer, Wine, Scotch (in that order)
+  * Mexican, Thai, Indian, Bangladeshi, Peruvian (food, not cocaine)
+  * Writing code and automating things
+  * Helping others go further than myself (explain)
+* Online:
+  * Twitter: [@skatterbrainzz](https://twitter.com/skatterbrainzz)
+  * Blog: [https://skatterbrainz.wordpress.com](https://skatterbrainz.wordpress.com)
+  * LinkedIn: [https://www.linkedin.com/in/ds0934](https://www.linkedin.com/in/ds0934)
+  * Reddit / StackOverflow / Slack / etc.: skatterbrainz
+
 ## 2 - Benefits of Comment-Based Help (and Comments in General)
 
 * Explain functions, parameters, inputs and outputs, provide examples, etc.
