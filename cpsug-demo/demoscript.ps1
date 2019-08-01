@@ -20,7 +20,7 @@ Reverse returns LastName, FirstName
 Check out: https://github.com/Skatterbrainz/cpsug-examples-aug2019
 #>
 param (
-    [parameter(Mandatory, HelpMessage="First name")] [string] $FirstName
+    [parameter(Mandatory, HelpMessage="First name of the employee")] [string] $FirstName
 )
 
 Write-Output "doing something for $FirstName"
