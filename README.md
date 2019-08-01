@@ -41,7 +41,7 @@ It's all about me (not).
 
 ## 2 - Benefits of Comment-Based Help (and Comments in General)
 
-* Explain functions, parameters, inputs and outputs, provide examples, etc.
+* Helps explain things to users (functions, parameters, inputs and outputs, provide examples, etc.)
 * More professional looking
 * Supports automated documentation
 
