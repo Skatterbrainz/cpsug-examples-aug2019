@@ -6,8 +6,8 @@ This document adds one more example for using the .LINK property within comment-
 
 ## Example 1 - Function Comment using .LINK Property
 
-This example is taken from the Invoke-DsMaintenance function within the module "ds-utils" 
-[https://github.com/Skatterbrainz/ds-utils/blob/master/]
+This example is taken from the Invoke-DsMaintenance function within the module 
+[ds-utils](https://github.com/Skatterbrainz/ds-utils/blob/master/)
 
 ```powershell
 <#
@@ -40,3 +40,11 @@ This example is taken from the Invoke-DsMaintenance function within the module "
     https://github.com/Skatterbrainz/ds-utils/blob/master/docs/Invoke-DsMaintenance.md
 #>
 ```
+
+To demonstrate this, load the module and type the following:
+
+```powershell
+Get-Help Invoke-DsMaintenance -Online
+```
+
+You should see the URL from the .LINK property opened in your default web browser.
