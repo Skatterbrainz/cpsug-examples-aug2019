@@ -182,3 +182,7 @@ More: [https://en.wikipedia.org/wiki/Markdown#Standardization](https://en.wikipe
 * It looks more professional
 
 ## 7 - Questions
+
+## 8 - Additional Resources
+
+* [Addendum](https://github.com/Skatterbrainz/cpsug-examples-aug2019/blob/master/addendum.md)
